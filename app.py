@@ -1,11 +1,9 @@
 import streamlit as st
 
 import base64
-from wit import Wit
+#from wit import Wit
 
-client = Wit('MVJCGTO5PI7CIB7WZZLTRWDIVEEDPA7D')
-
-from PIL import Image
+#client = Wit('MVJCGTO5PI7CIB7WZZLTRWDIVEEDPA7D')
 
 
 file_ = open("./1.gif", "rb")
@@ -35,13 +33,13 @@ start = st.button("Get Resources")
 stop = st.button("Reset App")
 
 
-if start:
-    resp = client.message(t)
-    try:
-        if (resp['intents'][0]['confidence']) > 0.8:
-            st.write(resp)
-        else:
-            st.write("Sorry, I don't Have Resources On This Topic Yet.")
+# if start:
+    # resp = client.message(t)
+    # try:
+        # if (resp['intents'][0]['confidence']) > 0.8:
+            # st.write(resp)
+        # else:
+            # st.write("Sorry, I don't Have Resources On This Topic Yet.")
 
-    except:
-        st.write("No intents were detected")
+    # except:
+        # st.write("No intents were detected")
