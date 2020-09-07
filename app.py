@@ -1,7 +1,7 @@
 import streamlit as st
 
 import base64
-#from wit import Wit
+from wit import Wit
 
 client = Wit('MVJCGTO5PI7CIB7WZZLTRWDIVEEDPA7D')
 
