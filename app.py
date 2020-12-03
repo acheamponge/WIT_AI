@@ -3,7 +3,7 @@ import streamlit as st
 import base64
 from wit import Wit
 
-client = Wit('MVJCGTO5PI7CIB7WZZLTRWDIVEEDPA7D')
+client = Wit('#use your wit.ai key')
 
 
 file_ = open("./1.gif", "rb")
